@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Our own colors and fonts. Tailwind turns these into classes automatically:
+   --color-blush  ->  bg-blush, text-blush, border-blush ...  */
+@theme {
+  --color-blush: #fbeeee;
+  --color-wine: #3d1028;
+  --color-rose: #d6456b;
+  --color-gold: #e5a93d;
+  --font-script: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Nunito", system-ui, sans-serif;
+
+  /* Candle flame flicker. Used with the class: animate-flicker */
+  --animate-flicker: flicker 1.2s ease-in-out infinite;
+  @keyframes flicker {
+    0%, 100% { transform: scale(1) rotate(-2deg); }
+    25% { transform: scale(1.08, 0.94) rotate(2deg); }
+    50% { transform: scale(0.94, 1.08) rotate(-1deg); }
+    75% { transform: scale(1.05, 1) rotate(1.5deg); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-blush);
+  color: var(--color-wine);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
