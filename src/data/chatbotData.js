@@ -72,4 +72,8 @@ export const botKnowledge = [
     keywords: ['USA', 'usa' , 'america', 'foreign'],
     answer: 'Your Foreign family members are aukaat se baharr. Kichu bolbo na bhoi lagee. Millionaire mama and khala diye bhorti bye sorry 💸💸💸💸',
   },
+      {
+    keywords: ['fuck' , 'sex' , 'takla' , 'tak'],
+    answer: 'jah dushhtuuuu💦💦',
+  },
 ]
